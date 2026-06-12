@@ -1,0 +1,60 @@
+# =============================================================================
+# skipperbot-app-newsletter — .gitignore
+# =============================================================================
+
+# ----- secrets and credentials (NEVER commit) -----
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+*.pfx
+**/service-account*.json
+**/credentials*.json
+
+# ----- runtime state / generated content -----
+data/*.json
+!data/*.example.json
+*.dump
+*.sql.gz
+logs/
+tmp/
+uploads/
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ----- Node / web build (ui/) -----
+node_modules/
+*.tsbuildinfo
+
+# ----- IDE / editors / OS junk -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.bak
+*.orig
+*.rej

@@ -1,0 +1,51 @@
+id: scrum
+name: Scrum
+version: "1.0.0"
+description: >
+  Daily-standup tracker for a household that runs like a software-dev team.
+  Each morning the platform's Goals/PM daily-update runner writes a personalized
+  set of scrum items (what you finished, what you're focused on, what's blocking
+  you, plus findings and schedule reminders) for each person. You answer them
+  from chat or the Scrum app, and answering can roll a linked task forward
+  (done / in-progress / blocked). Niche by design — most families won't want it.
+
+# Not a core app — installable separately, platform runs fine without it.
+core: false
+
+platform_min_version: "1.0.0"
+
+# Owns the scrum_items table in the app_scrum schema.
+entity_types:
+  - prefix: si
+    name: Scrum Item
+    id_format: "si-{hex8}"
+    table: scrum_items
+
+# Platform services this app consumes.
+platform_deps:
+  - goals          # the Goals/PM daily-update runner generates the scrum items
+  - notifications  # daily check-in delivery
+
+# Tool category for keyword routing.
+tool_category:
+  description: >
+    Daily scrum check-in — record responses to PM daily update items
+  keywords:
+    - scrum
+    - daily scrum
+    - standup
+    - stand-up
+    - daily standup
+    - scrum item
+    - scrum response
+    - daily update
+    - pm update
+    - check-in
+
+# Desktop UI registration (auto-discovered by the platform's Vite glob).
+ui:
+  - id: scrum
+    name: Scrum
+    icon: ClipboardList
+    component: ScrumApp
+    singleton: true

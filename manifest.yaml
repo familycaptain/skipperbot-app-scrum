@@ -42,10 +42,6 @@ tool_category:
     - pm update
     - check-in
 
-# Desktop UI registration (auto-discovered by the platform's Vite glob).
-ui:
-  - id: scrum
-    name: Scrum
-    icon: ClipboardList
-    component: ScrumApp
-    singleton: true
+# Desktop UI is auto-discovered from ui/index.js via the platform's Vite glob —
+# no manifest `ui:` block is needed (and a bare list there crashes parse_manifest,
+# which expects `ui: { apps: [...] }`).

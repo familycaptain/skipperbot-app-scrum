@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.answering.an-answer-needs-words
+title: An empty answer is not an answer
+state: live
+autonomy: gated
+behavior: >
+  An answer with no text in it is refused, and the item stays unanswered and still outstanding,
+  rather than being closed with a blank response nobody can read back later.
+implements:
+- routes.py::api_respond_to_scrum_item
+- tools.py::respond_to_scrum_item
+tests: []
+links: {}
+notes: ''

@@ -1,0 +1,17 @@
+kind: specification
+id: scrum.board.pick-a-person
+title: You see your own standup unless you choose otherwise
+state: live
+autonomy: gated
+behavior: >
+  The Scrum app opens on the signed-in person's own standups. They can switch to another member of
+  the household, or to everyone at once -- and when looking at everyone, each item shows whose it
+  is, since otherwise two people's answers to the same question are indistinguishable.
+implements:
+- ui/ScrumApp.jsx::ScrumApp
+- routes.py::api_get_scrum_items
+tests: []
+links: {}
+notes: >
+  Standups being visible across the household is deliberate -- it is a shared ritual, and seeing
+  what everyone is blocked on is most of its value.

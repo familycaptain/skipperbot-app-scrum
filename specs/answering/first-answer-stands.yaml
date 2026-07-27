@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.answering.first-answer-stands
+title: The first answer stands
+state: live
+autonomy: gated
+behavior: >
+  An item can be answered once. A second answer to an item that already has one leaves the
+  recorded answer untouched and says so rather than replacing it, so a reply sent twice -- or from
+  two places at once -- never rewrites what was said the first time.
+implements:
+- data.py::respond_to_item
+- tools.py::respond_to_scrum_item
+tests: []
+links: {}
+notes: ''

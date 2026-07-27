@@ -1,0 +1,17 @@
+kind: specification
+id: scrum.standup.more-than-the-three-questions
+title: A standup can carry more than the three questions
+state: live
+autonomy: gated
+behavior: >
+  Besides the three questions, a standup can carry an observation about someone's work or a
+  reminder about something scheduled. Those are shown together and apart from the three questions,
+  and one marked critical, warning or informational is badged as such, so an urgent one is not
+  lost among routine ones.
+implements:
+- routes.py::api_create_scrum_item
+- ui/ScrumApp.jsx::TYPE_META
+- ui/ScrumApp.jsx::SEVERITY_BADGE
+tests: []
+links: {}
+notes: ''

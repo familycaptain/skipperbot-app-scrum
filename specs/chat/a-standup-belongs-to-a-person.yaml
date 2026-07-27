@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.chat.a-standup-belongs-to-a-person
+title: A standup question is always about somebody
+state: live
+autonomy: gated
+behavior: >
+  A request for someone's outstanding items that names nobody is refused rather than answered with
+  the household's questions at large: a standup belongs to a person, and one person's open
+  questions are never returned as another's.
+implements:
+- tools.py::get_pending_scrum_items
+tests: []
+links: {}
+notes: ''

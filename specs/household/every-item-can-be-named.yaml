@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.household.every-item-can-be-named
+title: Every item can be named exactly
+state: live
+autonomy: gated
+behavior: >
+  Each standup item carries a short identifier that is shown whenever items are listed, so a
+  person or Skipper can point at one precisely. Two items worded identically on the same day are
+  still told apart.
+implements:
+- data.py::_new_id
+- tools.py::get_pending_scrum_items
+tests: []
+links: {}
+notes: ''

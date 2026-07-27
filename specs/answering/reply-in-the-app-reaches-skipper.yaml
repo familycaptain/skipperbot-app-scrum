@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.answering.reply-in-the-app-reaches-skipper
+title: Answering in the app is the same as telling Skipper
+state: live
+autonomy: gated
+behavior: >
+  An answer typed into the Scrum app is treated exactly as if it had been said to Skipper in
+  conversation: it is recorded, and then acted on -- tasks moved, dates set, notes taken --
+  without the person repeating themselves in chat. If acting on it fails, the answer is still
+  saved and the person is not shown an error for it.
+implements:
+- routes.py::api_respond_to_scrum_item
+tests: []
+links: {}
+notes: ''

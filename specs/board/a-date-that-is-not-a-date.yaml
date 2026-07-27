@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.board.a-date-that-is-not-a-date
+title: A date that is not a date is refused
+state: live
+autonomy: gated
+behavior: >
+  Asking for one particular day's standups with something that is not a calendar date is refused
+  with a message saying what a date should look like, rather than being ignored and answered with
+  a week of items nobody asked for.
+implements:
+- routes.py::api_get_scrum_items
+tests: []
+links: {}
+notes: ''

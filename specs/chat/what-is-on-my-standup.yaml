@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.chat.what-is-on-my-standup
+title: Asking what is on your standup lists what is still open
+state: live
+autonomy: gated
+behavior: >
+  Asking Skipper what the morning check-in wants lists that person's unanswered items for the
+  current day -- each with its kind, its text, the project it belongs to and any detail -- and
+  nothing else. Items already answered, and items from earlier days, are left out.
+implements:
+- tools.py::get_pending_scrum_items
+tests: []
+links: {}
+notes: ''

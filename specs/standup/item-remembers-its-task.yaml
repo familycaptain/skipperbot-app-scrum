@@ -1,0 +1,16 @@
+kind: specification
+id: scrum.standup.item-remembers-its-task
+title: Each item remembers the work it came from
+state: live
+autonomy: gated
+behavior: >
+  An item raised from a task keeps a link back to that task and shows which project it belongs to,
+  so answering it can move the right work forward and the person can tell which project a question
+  is about. An item raised from nothing in particular -- one somebody added themselves -- carries
+  no link and shows no project, and answering it moves nothing.
+implements:
+- data.py::save_scrum_item
+- data.py::save_scrum_items_bulk
+tests: []
+links: {}
+notes: ''

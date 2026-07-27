@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.board.under-the-question-they-answer
+title: Items sit under the question they answer
+state: live
+autonomy: gated
+behavior: >
+  Opening a day shows the three standup questions in order with their items beneath them. A
+  question nobody has anything for still appears and says so -- 'no blockers reported' rather than
+  blank space -- so an absent blocker reads as absent rather than as missing data.
+implements:
+- ui/ScrumApp.jsx::SCRUM_QUESTIONS
+tests: []
+links: {}
+notes: ''

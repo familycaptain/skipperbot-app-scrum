@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.board.nothing-yet
+title: An empty board explains itself
+state: live
+autonomy: gated
+behavior: >
+  With no standups in the chosen range the app says there are none yet and explains that items
+  appear once the morning check-in has run, rather than showing an empty panel that reads as a
+  fault. While it is fetching, it says it is loading.
+implements:
+- ui/ScrumApp.jsx::ScrumApp
+tests: []
+links: {}
+notes: ''

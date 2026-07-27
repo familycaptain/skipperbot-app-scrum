@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.board.answer-your-own
+title: You answer your own standup, not somebody else's
+state: live
+autonomy: gated
+behavior: >
+  A person can reply to their own unanswered items. Another person's standup is read-only -- their
+  questions and answers can be read, but there is no way to answer on their behalf. An item that
+  already has an answer offers no reply either way.
+implements:
+- ui/ScrumApp.jsx::ScrumItemCard
+tests: []
+links: {}
+notes: ''

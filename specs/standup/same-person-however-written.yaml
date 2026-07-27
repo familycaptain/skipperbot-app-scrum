@@ -1,0 +1,16 @@
+kind: specification
+id: scrum.standup.same-person-however-written
+title: A person is the same person however their name is typed
+state: live
+autonomy: gated
+behavior: >
+  A person's name is treated the same whatever its capitalisation or surrounding spaces, so items
+  filed for someone under one spelling appear in their standup rather than being split across two
+  apparent people who never see each other's questions.
+implements:
+- data.py::save_scrum_item
+- data.py::save_scrum_items_bulk
+- data.py::get_scrum_items
+tests: []
+links: {}
+notes: ''

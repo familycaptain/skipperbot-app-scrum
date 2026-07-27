@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.answering.moves-the-work
+title: Answering moves the work
+state: live
+autonomy: gated
+behavior: >
+  Saying you finished a standup item marks the task behind it done, saying you are working on it
+  marks it in progress, and saying you are stuck marks it blocked -- each with the person's own
+  words kept on the task as the reason it moved. An answer that is none of these is recorded and
+  the task is left where it was.
+implements:
+- tools.py::respond_to_scrum_item
+tests: []
+links: {}
+notes: ''

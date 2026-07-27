@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.answering.task-that-will-not-move
+title: A task that will not move never costs you the answer
+state: live
+autonomy: gated
+behavior: >
+  If the task behind an item cannot be updated -- it has been deleted, or the change is refused --
+  the answer is still recorded and the person is told plainly that the task did not move. An
+  answer is never thrown away because the follow-on action failed.
+implements:
+- tools.py::respond_to_scrum_item
+tests: []
+links: {}
+notes: ''

@@ -1,0 +1,16 @@
+kind: capability
+id: scrum
+title: Scrum
+app: scrum
+scope: >
+  The household's daily standup. Each morning every person with work in flight is asked the three
+  standup questions -- what you finished, what you are working on, what is in your way -- and
+  their answers are recorded against the goals and tasks the questions came from, so answering the
+  standup is how the work actually moves. Owns the standup items and their answers; does NOT own
+  the goals, projects and tasks they are about, nor how the morning message reaches anyone.
+  Optional by design: a household that does not want a standup does not add it, and nobody is
+  asked anything.
+state: live
+autonomy: gated
+links: {}
+notes: ''

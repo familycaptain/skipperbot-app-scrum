@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.standup.one-a-day
+title: A standup is filed once a day
+state: live
+autonomy: gated
+behavior: >
+  Once a day's standup has been filed, running the morning check again the same day adds nothing:
+  the items already there are left exactly as they are, answers included, and nobody is asked the
+  same questions twice. A fresh set appears the following morning under that day's date.
+implements:
+- data.py::items_exist_for_date
+- data.py::save_scrum_items_bulk
+tests: []
+links: {}
+notes: ''

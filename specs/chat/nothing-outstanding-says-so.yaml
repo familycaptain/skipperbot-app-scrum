@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.chat.nothing-outstanding-says-so
+title: Nothing outstanding is said plainly
+state: live
+autonomy: gated
+behavior: >
+  Someone with no unanswered items for the current day is told so by name rather than shown an
+  empty list or handed yesterday's questions. The same plain answer is given whether they have
+  answered everything or were never asked anything.
+implements:
+- tools.py::get_pending_scrum_items
+tests: []
+links: {}
+notes: ''

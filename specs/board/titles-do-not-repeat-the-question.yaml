@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.board.titles-do-not-repeat-the-question
+title: An item does not repeat the question above it
+state: live
+autonomy: gated
+behavior: >
+  Under a question heading an item reads as the answer to it: a finished task under 'what did you
+  finish?' is shown by its name alone, not prefixed with 'Completed'. The same word is not read
+  twice on every line.
+implements:
+- ui/ScrumApp.jsx::stripPrefix
+tests: []
+links: {}
+notes: ''

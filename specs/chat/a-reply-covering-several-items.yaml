@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.chat.a-reply-covering-several-items
+title: One reply can answer several questions
+state: live
+autonomy: gated
+behavior: >
+  A reply that covers more than one thing -- 'finished the fence, working on the taxes, still
+  stuck on the permit' -- is matched to the items it addresses, and each is answered separately
+  with the part of the reply that was about it, within a single exchange.
+implements:
+- tools.py::respond_to_scrum_item
+- guide.md
+tests: []
+links: {}
+notes: ''

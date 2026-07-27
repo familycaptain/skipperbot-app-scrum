@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.board.history-window-has-a-limit
+title: History has an upper limit
+state: live
+autonomy: gated
+behavior: >
+  A request for more than about three months of standups is answered with three months rather than
+  the whole archive, so no single request can be made to sweep everything the household has ever
+  said in a standup.
+implements:
+- routes.py::api_get_scrum_items
+tests: []
+links: {}
+notes: ''

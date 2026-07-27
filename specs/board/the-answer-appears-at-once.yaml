@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.board.the-answer-appears-at-once
+title: An answer appears without waiting
+state: live
+autonomy: gated
+behavior: >
+  Sending a reply marks the item answered and shows the answer immediately, without reloading the
+  day or losing the reader's place. While it is being sent the app says so, so a slow reply is not
+  mistaken for a lost one.
+implements:
+- ui/ScrumApp.jsx::ScrumItemCard
+- ui/ScrumApp.jsx::ScrumApp
+tests: []
+links: {}
+notes: ''

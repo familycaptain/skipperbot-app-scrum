@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.answering.answering-something-that-is-not-there
+title: Answering something that is not there says so
+state: live
+autonomy: gated
+behavior: >
+  An answer aimed at an item that does not exist is refused, naming the item that could not be
+  found, rather than being reported as recorded. Nothing is created to receive it.
+implements:
+- routes.py::api_respond_to_scrum_item
+- tools.py::respond_to_scrum_item
+tests: []
+links: {}
+notes: ''

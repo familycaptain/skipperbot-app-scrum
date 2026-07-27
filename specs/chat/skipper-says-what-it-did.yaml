@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.chat.skipper-says-what-it-did
+title: Skipper says what it recorded and what moved
+state: live
+autonomy: gated
+behavior: >
+  After recording an answer Skipper reports which item it went against, that item's kind and text,
+  and -- when the answer moved a task -- which task moved and to what. When nothing moved it says
+  only that the answer was recorded, so nobody is left assuming a task changed when it did not.
+implements:
+- tools.py::respond_to_scrum_item
+tests: []
+links: {}
+notes: ''

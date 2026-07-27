@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.household.linked-to-the-work
+title: A standup item is findable from the work it is about
+state: live
+autonomy: gated
+behavior: >
+  An item raised from a task is recorded as related to that task, so the task leads to the
+  question that was asked about it and the question leads back to the task. An item raised from
+  nothing is related to nothing and leaves no stray connection behind.
+implements:
+- data.py::save_scrum_item
+- data.py::save_scrum_items_bulk
+tests: []
+links: {}
+notes: ''

@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.board.pick-a-stretch-of-days
+title: How far back to look is a choice
+state: live
+autonomy: gated
+behavior: >
+  The app shows about a week of standups by default and can be narrowed to the current day or
+  widened to the last three, fourteen or thirty. Changing the range re-reads straight away rather
+  than waiting for the next refresh.
+implements:
+- ui/ScrumApp.jsx::ScrumApp
+- routes.py::api_get_scrum_items
+tests: []
+links: {}
+notes: ''

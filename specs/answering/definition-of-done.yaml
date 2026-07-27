@@ -1,0 +1,17 @@
+kind: specification
+id: scrum.answering.definition-of-done
+title: A task that says what done means closes when the answer meets it
+state: live
+autonomy: gated
+behavior: >
+  When the task behind an item states what finished looks like for it, an answer describing that
+  outcome closes the task even if the word 'done' is never used. When the task says no such thing,
+  nothing closes unless the person says outright that it is finished -- a progress update on its
+  own never closes a task.
+implements:
+- routes.py::api_respond_to_scrum_item
+tests: []
+links: {}
+notes: >
+  The asymmetry is deliberate: inferring that work is finished is only safe where the task said in
+  advance what finished would look like.

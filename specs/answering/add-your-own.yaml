@@ -1,0 +1,16 @@
+kind: specification
+id: scrum.answering.add-your-own
+title: You can add something the standup did not ask about
+state: live
+autonomy: gated
+behavior: >
+  On the current day's standup a person can add their own entry under any of the three questions
+  -- something else they finished, something else they are working on, a blocker nobody knew
+  about. It is filed under their name for that day, recorded as already answered in their own
+  words, and appears alongside the questions Skipper raised. Earlier days cannot be added to.
+implements:
+- routes.py::api_create_scrum_item
+- ui/ScrumApp.jsx::ScrumSectionInput
+tests: []
+links: {}
+notes: ''

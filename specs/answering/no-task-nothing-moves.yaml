@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.answering.no-task-nothing-moves
+title: An item with no work behind it just records the answer
+state: live
+autonomy: gated
+behavior: >
+  Answering an item that was not raised from a task -- an observation, a schedule reminder,
+  something the person added themselves -- records the answer and moves nothing, even when the
+  answer plainly says it is done. Nothing fails and no task is guessed at.
+implements:
+- tools.py::respond_to_scrum_item
+tests: []
+links: {}
+notes: ''

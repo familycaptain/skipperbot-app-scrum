@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.chat.only-what-was-said
+title: Only what was actually said is recorded
+state: live
+autonomy: gated
+behavior: >
+  Items the person did not mention are left unanswered rather than filled in with a plausible
+  guess, so a question that went unanswered stays visibly unanswered and comes round again instead
+  of being quietly closed on their behalf.
+implements:
+- guide.md
+tests: []
+links: {}
+notes: ''

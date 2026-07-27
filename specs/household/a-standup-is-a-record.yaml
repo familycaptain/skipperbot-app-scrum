@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.household.a-standup-is-a-record
+title: A standup is a record, not a scratchpad
+state: live
+autonomy: gated
+behavior: >
+  Once filed, a standup item cannot be edited or deleted -- only answered -- so what was asked and
+  what was said stands as it was. Past days stay readable for as long as the household keeps them.
+implements:
+- routes.py
+- tools.py
+tests: []
+links: {}
+notes: ''

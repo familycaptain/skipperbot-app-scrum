@@ -1,0 +1,16 @@
+kind: specification
+id: scrum.standup.three-questions
+title: A standup asks three questions
+state: live
+autonomy: gated
+behavior: >
+  A person's standup asks what they finished since yesterday, what they are working on today, and
+  whether anything is blocking them. Each question is filled from that person's own work -- tasks
+  they recently completed, the task queued up next for them, tasks flagged as blocked -- so the
+  standup is about work actually in flight rather than a blank form to fill in.
+implements:
+- data.py::save_scrum_items_bulk
+- ui/ScrumApp.jsx::SCRUM_QUESTIONS
+tests: []
+links: {}
+notes: ''

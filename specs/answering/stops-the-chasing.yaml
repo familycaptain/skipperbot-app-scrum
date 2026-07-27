@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.answering.stops-the-chasing
+title: Answering stops Skipper chasing you about it
+state: live
+autonomy: gated
+behavior: >
+  When an item is answered, any outstanding follow-up Skipper was holding about the same piece of
+  work is cleared, so nobody is asked again about something they have just answered. If that
+  clearing fails the answer still stands and is still recorded.
+implements:
+- tools.py::respond_to_scrum_item
+tests: []
+links: {}
+notes: ''

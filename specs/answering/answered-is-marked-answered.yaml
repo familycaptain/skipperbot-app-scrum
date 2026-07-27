@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.answering.answered-is-marked-answered
+title: An answered item shows as answered
+state: live
+autonomy: gated
+behavior: >
+  Once an item is answered it is marked as replied, the answer is shown beneath the question, and
+  the time it was answered is kept. It stops counting as outstanding, so that day's tally of open
+  questions drops by one.
+implements:
+- data.py::respond_to_item
+- ui/ScrumApp.jsx::ScrumItemCard
+tests: []
+links: {}
+notes: ''

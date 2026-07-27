@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.standup.filed-under-the-day-it-is-about
+title: An item stays on the day it was asked about
+state: live
+autonomy: gated
+behavior: >
+  Every item belongs to the calendar day its standup was for and stays under that day however long
+  it goes unanswered and however late the answer comes -- a question from Tuesday answered on
+  Friday is still Tuesday's question. Within a day, items keep the order they were raised in.
+implements:
+- data.py::get_scrum_items
+- migrations/001_initial.sql
+tests: []
+links: {}
+notes: ''

@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.board.day-at-a-glance
+title: A closed day still says what is in it
+state: live
+autonomy: gated
+behavior: >
+  Each day's heading shows the date in words, how many items it holds, how many are still
+  unanswered, and a count of each kind -- so someone can tell whether a day needs them without
+  opening it. A day with nothing outstanding shows no outstanding count at all.
+implements:
+- ui/ScrumApp.jsx::ScrumApp
+tests: []
+links: {}
+notes: ''

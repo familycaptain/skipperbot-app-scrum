@@ -1,0 +1,17 @@
+kind: specification
+id: scrum.household.a-standup-is-opt-in
+title: A household that has not asked for a standup is never given one
+state: live
+autonomy: gated
+behavior: >
+  The daily standup exists only for households that add this app. Without it nobody is asked the
+  three questions and no standup is kept, while the rest of Skipper -- goals, projects, tasks and
+  every other app -- carries on exactly as before. Adding it starts the morning check-in from the
+  next morning.
+implements:
+- manifest.yaml::core
+tests: []
+links: {}
+notes: >
+  Deliberately niche: running a home like a dev team is a minority taste, so the standup ships as
+  something to opt into rather than something to turn off.

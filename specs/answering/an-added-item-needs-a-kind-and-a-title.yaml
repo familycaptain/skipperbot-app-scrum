@@ -1,0 +1,14 @@
+kind: specification
+id: scrum.answering.an-added-item-needs-a-kind-and-a-title
+title: An added entry needs a recognised kind and something to say
+state: live
+autonomy: gated
+behavior: >
+  An entry someone adds must say which recognised kind it is -- finished, focus, blocker,
+  observation or schedule reminder -- and must actually have text. Anything else is refused with a
+  message listing the kinds that are accepted, and nothing is filed.
+implements:
+- routes.py::api_create_scrum_item
+tests: []
+links: {}
+notes: ''

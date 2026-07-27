@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.standup.nothing-to-ask-means-no-standup
+title: Nobody is asked about nothing
+state: live
+autonomy: gated
+behavior: >
+  Someone with no work in flight -- no active project, nothing recently finished, nothing queued,
+  nothing blocked -- gets no standup at all that morning rather than an empty one, and their board
+  shows that day as absent rather than as a day of unanswered questions. Only people with
+  something to report are asked.
+implements:
+- data.py::save_scrum_items_bulk
+tests: []
+links: {}
+notes: ''

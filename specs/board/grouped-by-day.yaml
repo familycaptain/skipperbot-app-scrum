@@ -1,0 +1,13 @@
+kind: specification
+id: scrum.board.grouped-by-day
+title: Standups are read a day at a time
+state: live
+autonomy: gated
+behavior: >
+  The Scrum app lists standups by day, newest first, with the most recent day already open and
+  older days collapsed. Any day can be opened or closed, and several can be open at once.
+implements:
+- ui/ScrumApp.jsx::ScrumApp
+tests: []
+links: {}
+notes: ''

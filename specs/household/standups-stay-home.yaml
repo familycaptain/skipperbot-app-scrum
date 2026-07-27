@@ -1,0 +1,15 @@
+kind: specification
+id: scrum.household.standups-stay-home
+title: Standups stay in the household
+state: live
+autonomy: gated
+behavior: >
+  A person's standup items and their answers are kept in the household's own installation, and
+  this app contacts no outside service of its own to store or process them. Taking the app away
+  takes the standup away; it does not publish what was said.
+implements:
+- migrations/001_initial.sql
+- data.py
+tests: []
+links: {}
+notes: ''
